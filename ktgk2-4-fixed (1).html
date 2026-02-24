@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Đà Lạt - Thanh Xuân Lớp 12.9 trọn vẹn 1 thanh xuân 1 mình Dương cân tất</title>
+
+<style>
+body{
+    margin:0;
+    font-family:'Segoe UI',sans-serif;
+    background:#f5f7fa;
+    color:#333;
+    line-height:1.8;
+}
+
+header{
+    background:url("images/header.jpg") center/cover no-repeat;
+    height:70vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+header h1{
+    font-size:48px;
+    background:rgba(0,0,0,0.6);
+    padding:20px 40px;
+    border-radius:12px;
+}
+
+nav{
+    background:white;
+    padding:15px;
+    text-align:center;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav a{
+    text-decoration:none;
+    margin:0 20px;
+    color:#2e7d32;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#1b5e20;
+}
+
+.container{
+    width:85%;
+    margin:auto;
+    padding:60px 0;
+}
+
+section{
+    margin-bottom:80px;
+}
+
+section h2{
+    color:#2e7d32;
+    border-left:6px solid #2e7d32;
+    padding-left:12px;
+    margin-bottom:20px;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:15px;
+    margin-top:20px;
+}
+
+.gallery img{
+    width:100%;
+    border-radius:12px;
+    cursor:pointer;
+    transition:0.4s;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    aspect-ratio:16/9;
+    object-fit:cover;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+}
+
+.lightbox{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.85);
+    justify-content:center;
+    align-items:center;
+    z-index:2000;
+}
+
+.lightbox img{
+    max-width:90%;
+    max-height:80%;
+    border-radius:10px;
+}
+
+.lightbox span{
+    position:absolute;
+    top:30px;
+    right:40px;
+    font-size:45px;
+    color:white;
+    cursor:pointer;
+}
+
+footer{
+    background:#2e7d32;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+@media(max-width:768px){
+    header h1{
+        font-size:30px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Đà Lạt 3 Ngày 2 Đêm<br>Trọn vẹn Thanh Xuân Lớp 12.9</h1>
+</header>
+
+<nav>
+    <a href="#intro">Mở đầu</a>
+    <a href="#day1">Ngày 1</a>
+    <a href="#day2">Ngày 2</a>
+    <a href="#day3">Ngày 3</a>
+</nav>
+
+<div class="container">
+
+<section id="intro">
+<h2>Mở đầu hành trình</h2>
+<p>
+Ba năm cấp ba khép lại bằng một chuyến đi thật đặc biệt – hành trình trải nghiệm Đà Lạt 3 ngày 2 đêm
+cùng tập thể lớp 12.9, THPT Huỳnh Văn Nghệ.
+Không chỉ là một chuyến tham quan, đó còn là dấu mốc của tuổi 18 – nơi chúng tôi được cười hết mình,
+sống trọn từng khoảnh khắc và lưu giữ những ký ức thanh xuân rực rỡ nhất.
+</p>
+</section>
+
+<section id="day1">
+<h2>Ngày 1 - Lang Biang & Văn Hóa Cồng Chiêng</h2>
+<p>
+Điểm dừng chân đầu tiên là dưới chân đỉnh Lang Biang hùng vĩ.
+Giữa không gian núi rừng xanh mát và bầu không khí se lạnh đặc trưng của Đà Lạt,
+cả lớp cùng nhau chụp ảnh, vui chơi và tận hưởng thiên nhiên.
+</p>
+<p>
+Đặc biệt, buổi tối thưởng thức văn hóa cồng chiêng Tây Nguyên là một trải nghiệm đáng nhớ.
+Bên ánh lửa trại bập bùng, tiếng cồng chiêng vang lên trầm hùng giữa núi rừng,
+mang đậm bản sắc văn hóa truyền thống.
+Chúng tôi nắm tay nhau nhảy múa quanh lửa, hòa theo nhịp điệu,
+cảm nhận sự gắn kết thiêng liêng giữa tập thể và văn hóa bản địa.
+</p>
+
+<div class="gallery">
+<img src="https://i.ibb.co/xpCWfz4/lang1.jpg" alt="Lang biang 1" onclick="openLightbox(this.src)">
+<img src="https://i.ibb.co/8W1dGjN/lang2.jpg" alt="Lang biang 2" onclick="openLightbox(this.src)">
+<img src="https://i.ibb.co/PsBBd00X/congchieng1.jpg" alt="congchieng1" onclick="openLightbox(this.src)">
+<img src="https://i.ibb.co/x8sc5PcD/congchieng2.jpg" alt="congchieng2" onclick="openLightbox(this.src)">
+</div>
+</section>
+
+<section id="day2">
+<h2>Ngày 2 - Mộc Garden | Mongoland | Nhà thờ Domaine | Gala Dinner</h2>
+<p>
+Buổi sáng ngày thứ hai bắt đầu tại Mộc Garden trong không gian ngập tràn hoa và ánh nắng dịu nhẹ.
+Những bức ảnh thanh xuân đầy màu sắc đã được lưu giữ tại đây.
+</p>
+<p>
+Sau đó, cả lớp đến Mongoland Đà Lạt – nơi được ví như thảo nguyên thu nhỏ giữa lòng thành phố.
+Không gian vui chơi rộng lớn cùng nhiều tiểu cảnh độc đáo mang đến vô vàn khoảnh khắc đáng nhớ.
+</p>
+<p>
+Buổi chiều, đoàn ghé thăm Nhà thờ Domaine cổ kính với sắc hồng đặc trưng.
+Không gian yên bình nơi đây khiến mỗi người lắng lại, suy nghĩ về chặng đường phía trước.
+</p>
+<p>
+Đêm Gala Dinner chính là khoảnh khắc bùng nổ nhất.
+Âm nhạc, ánh đèn và những tiết mục văn nghệ "cây nhà lá vườn"
+đã khiến cả lớp cháy hết mình.
+Tiếng cười xen lẫn những giọt nước mắt xúc động đã làm nên một đêm không thể nào quên.
+</p>
+
+<div class="gallery">
+<img src="https://i.ibb.co/PZBTSMDs/moc1.jpg" alt="Mộc Garden" onclick="openLightbox(this.src)">
+<img src="https://i.ibb.co/qMsbwKG4/mongo1.jpg" alt="mongo1" onclick="openLightbox(this.src)">
+<img src="https://i.ibb.co/HTWyn6Jb/domaine1.jpg" alt="Nhà thờ domaine" onclick="openLightbox(this.src)">
+<img src="https://i.ibb.co/rGZq7YP3/gala1.jpg" alt="gala1" onclick="openLightbox(this.src)">
+</div>
+</section>
+
+<section id="day3">
+<h2>Ngày 3 - Thiền Viện Trúc Lâm</h2>
+<p>
+Ngày cuối cùng, cả lớp đến tham quan Thiền Viện Trúc Lâm thanh tịnh bên hồ Tuyền Lâm.
+Không gian rừng thông và mặt hồ phẳng lặng khiến lòng người dịu lại.
+</p>
+<p>
+Đứng giữa khung cảnh bình yên ấy, chúng tôi nhận ra rằng chuyến đi không chỉ mang lại niềm vui,
+mà còn giúp mỗi người trưởng thành hơn, trân trọng tình bạn và những ngày còn được ngồi chung lớp học.
+</p>
+
+<div class="gallery">
+<img src="https://i.ibb.co/hxk36jfy/truclam1.jpg" alt="truclam1" onclick="openLightbox(this.src)">
+<img src="https://i.ibb.co/C5tPWCXw/truclam2.jpg" alt="truclam2" onclick="openLightbox(this.src)">
+<img src="https://i.ibb.co/qYnqbyDb/tapthe.jpg" alt="tapthe" onclick="openLightbox(this.src)">
+</div>
+</section>
+
+</div>
+
+<footer>
+© Email: <a href="mailto:tungduong08uh@gmail.com" style="color:white;">tungduong08uh@gmail.com</a> (08_ Phạm Tùng Dương)
+</footer>
+
+<div class="lightbox" id="lightbox">
+<span onclick="closeLightbox()">&times;</span>
+<img id="lightbox-img">
+</div>
+
+<script>
+function openLightbox(src){
+    document.getElementById("lightbox").style.display="flex";
+    document.getElementById("lightbox-img").src=src;
+}
+function closeLightbox(){
+    document.getElementById("lightbox").style.display="none";
+}
+
+// Đóng lightbox khi click vào background
+document.getElementById("lightbox").addEventListener("click", function(event) {
+    if(event.target === this) {
+        closeLightbox();
+    }
+});
+</script>
+
+</body>
+</html>
